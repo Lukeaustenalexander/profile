@@ -1,0 +1,41 @@
+.wrap{
+      max-width: 440px; margin: min(8vh,48px) auto; padding: 24px;
+    }
+    .card{
+      background: var(--card); border-radius: calc(var(--radius) + 2px); box-shadow: var(--shadow);
+      padding: 22px; border: 1px solid rgba(255,255,255,.06);
+    }
+    header{
+      display:flex; align-items:center; gap:16px; margin-bottom: 18px;
+    }
+    .avatar{
+      width:84px; height:84px; border-radius: 50%; object-fit: cover; border:3px solid rgba(255,255,255,.15);
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    }
+    .name{ font-size: 1.5rem; font-weight: 700; letter-spacing:.2px }
+    .tag{ color: var(--muted); font-size:.95rem }
+    .grid{
+      display:grid; gap:12px; margin-top: 8px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 420px){
+      .grid{ grid-template-columns: 1fr }
+    }
+    .tile{
+      display:flex; align-items:center; gap:12px; padding:16px;
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.02));
+      border:1px solid rgba(255,255,255,.08); border-radius: var(--radius);
+      text-decoration:none; color:inherit; position:relative; overflow:hidden;
+      transition: transform .12s ease, border-color .12s ease, background .12s ease;
+    }
+    .tile:active{ transform: translateY(1px) scale(.997) }
+    .tile:focus-visible{ outline:none; box-shadow: 0 0 0 4px var(--ring) }
+    .tile:hover{ border-color: rgba(14,165,233,.35) }
+    .icon{ width:28px; height:28px; flex:0 0 28px; opacity:.95 }
+    .label{ font-weight:600 }
+    .value{ color: var(--muted); font-size:.95rem }
+    .stack{ display:flex; flex-direction:column; gap:2px; min-width:0 }
+    .stack .value{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
+    .foot{
+      margin-top:14px; text-align:center; color:var(--muted); font-size:.85rem;
+    }
