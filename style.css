@@ -1,5 +1,5 @@
 .wrap{
-      max-width: 440px; margin: min(8vh,48px) auto; padding: 24px;
+      max-width: 440px; margin: min(0px,48px) auto; padding: 24px;
     }
     .card{
       background: var(--card); border-radius: calc(var(--radius) + 2px); box-shadow: var(--shadow);
@@ -38,4 +38,5 @@
     .stack .value{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis }
     .foot{
       margin-top:14px; text-align:center; color:var(--muted); font-size:.85rem;
+
     }
